@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
       - uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -17,5 +19,8 @@ jobs:
         run: |
           pnpm run test
       - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           pnpm auto shipit
