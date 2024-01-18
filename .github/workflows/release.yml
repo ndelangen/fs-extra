@@ -18,4 +18,4 @@ jobs:
           pnpm run test
       - name: Create Release
         run: |
-          pnpm run auto shipit
+          pnpm auto shipit
