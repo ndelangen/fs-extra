@@ -1,0 +1,52 @@
+'use strict'
+
+const out = require('fs-extra');
+
+const allowed = [
+  'copy',
+  'copySync',
+  'emptydirSync',
+  'emptyDir',
+  'emptyDirSync',
+  'emptydir',
+  'createFile',
+  'createFileSync',
+  'ensureFile',
+  'ensureFileSync',
+  'createLink',
+  'createLinkSync',
+  'ensureLink',
+  'ensureLinkSync',
+  'createSymlink',
+  'createSymlinkSync',
+  'ensureSymlink',
+  'ensureSymlinkSync',
+  'outputJson',
+  'outputJsonSync',
+  'outputJSON',
+  'outputJSONSync',
+  'writeJSON',
+  'writeJSONSync',
+  'readJSON',
+  'readJson',
+  'readJSONSync',
+  'readJsonSync',
+  'writeJson',
+  'writeJsonSync',
+  'mkdirs',
+  'mkdirsSync',
+  'mkdirp',
+  'mkdirpSync',
+  'ensureDir',
+  'ensureDirSync',
+  'move',
+  'moveSync',
+  'outputFile',
+  'outputFileSync',
+  'pathExists',
+  'pathExistsSync',
+  'remove',
+  'removeSync'
+]
+
+module.exports = Object.fromEntries(Object.entries(out).filter(([key]) => allowed.includes(key)));

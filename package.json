@@ -1,0 +1,51 @@
+{
+  "name": "@ndelangen/fs-extra-unified",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "fs-extra",
+    "esm",
+    "cjs",
+    "exports"
+  ],
+  "homepage": "https://github.com/ndelangen/fs-extra",
+  "bugs": {
+    "url": "https://github.com/ndelangen/fs-extra/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ndelangen/fs-extra.git"
+  },
+  "license": "MIT",
+  "author": "Norbert de Langen",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "main": "index.cjs",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "read-pkg-up": "^11.0.0",
+    "resolve.exports": "^2.0.2"
+  },
+  "peerDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "fs-extra": "^11.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/fs-extra": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
