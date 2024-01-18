@@ -3,7 +3,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 import { exports } from "resolve.exports";
-import { readPackageUp } from "read-pkg-up";
+import { readPackageUp } from "read-package-up";
 
 const esm = await getESM();
 const cjs = await getCJS();
