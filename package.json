@@ -47,5 +47,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ]
   }
 }
