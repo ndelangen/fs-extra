@@ -10,6 +10,12 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
+      - name: Install
+        run: |
+          pnpm install
+      - name: Test
+        run: |
+          pnpm run test
       - name: Create Release
         run: |
-          npx auto shipit
+          pnpm run auto shipit
