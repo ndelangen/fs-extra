@@ -57,4 +57,4 @@ export {
   writeJSON,
   writeJsonSync,
   writeJSONSync,
-} from "fs-extra/esm";
+} from "@types/fs-extra/esm.mjs";
