@@ -1,3 +1,15 @@
+# v1.0.4 (Sat Aug 03 2024)
+
+#### 🐛 Bug Fix
+
+- fix types & update [#5](https://github.com/ndelangen/fs-extra/pull/5) ([@ndelangen](https://github.com/ndelangen))
+
+#### Authors: 1
+
+- Norbert de Langen ([@ndelangen](https://github.com/ndelangen))
+
+---
+
 # v1.0.3 (Fri Feb 02 2024)
 
 #### 🐛 Bug Fix
