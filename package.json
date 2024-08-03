@@ -33,9 +33,11 @@
     "test": "node test.js"
   },
   "devDependencies": {
-    "auto": "^11.0.4",
+    "auto": "^11.2.0",
     "read-package-up": "^11.0.0",
-    "resolve.exports": "^2.0.2"
+    "resolve.exports": "^2.0.2",
+    "@types/fs-extra": "^11.0.0",
+    "fs-extra": "^11.0.0"
   },
   "peerDependencies": {
     "@types/fs-extra": "^11.0.0",
